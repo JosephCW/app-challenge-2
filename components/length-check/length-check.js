@@ -6,7 +6,7 @@ const adder = new Vue({
     computed: {
         result: function() {
             //return `Result is: ${parseInt(this.input1)}.`
-            return `Remaining Characters available: ${200 - (this.input1.length || 0)}`
+            return `Remaining Characters available: ${200 - this.userInput.length}`
         }
     }
 })

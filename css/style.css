@@ -5,3 +5,9 @@
 h1 {
     text-align: center;
 }
+
+#footer {
+    /* https://www.w3schools.com/cssref/pr_pos_bottom.asp */
+    position: absolute;
+    bottom: 10px;
+}

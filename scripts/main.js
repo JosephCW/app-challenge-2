@@ -22,3 +22,9 @@ function textFieldChanged() {
 document.getElementById("userInput").addEventListener("input", ()=> {
     textFieldChanged()
 })
+
+// Have to update color when page firsts load
+document.addEventListener("DOMContentLoaded",function(){
+    // https://stackoverflow.com/questions/39722809/wait-for-document-ready-in-es6-modules
+    textFieldChanged()
+});

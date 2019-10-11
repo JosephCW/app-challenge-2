@@ -1,13 +1,12 @@
 const adder = new Vue({
-    el: '#calc1',
+    el: '#length-check',
     data: {
-        input1: 1,
-        input2: 2
+        userInput: 'Here is a random string'
     },
     computed: {
         result: function() {
             //return `Result is: ${parseInt(this.input1)}.`
-            return `Result is: ${this.input1 + this.input2}`
+            return `Remaining Characters available: ${200 - (this.input1.length || 0)}`
         }
     }
 })

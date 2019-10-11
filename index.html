@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <meta name="description" content="CHANGE-ME">
+    <meta name="description" content="Sentence Length Checker">
     <meta name="author" content="Joseph Watts">
 
-    <title>Starter Repo</title>
+    <title>Sentence Checker</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,17 +17,12 @@
 
     <div class="container">
         <div class="row">
-            <article id="calc1" class="col col-md">
-                <h1>Simple Calculator</h1>
+            <article id="length-check" class="col col-md">
+                <h1>Sentence Length Checker</h1>
                 <div class="form-group">
-                    <label for="input1">Example label</label>
-                    <input v-model="input1" id="input1" type="text" class="form-control" maxlength="70">
+                    <label for="userInput">Enter a Sentence</label>
+                    <input v-model="userInput" id="userInput" type="text" class="form-control" maxlength="200">
                 </div>
-                <div class="form-group">
-                    <label for="input2">Another label</label>
-                    <input v-model="input2" id="input2" type="text" class="form-control" maxlength="70">
-                </div>
-                <button id="submit-button" class="btn btn-primary">Submit</button>
                 <span id=answer>{{result}}</span>
             </article>
         </div>
@@ -45,7 +40,7 @@
   <!-- Vue.js must be added before our custom code from https://cdnjs.com/libraries/vue -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
 
-  <script src="components/calc1/calc1.js"></script>
+  <script src="components/length-check/length-check.js"></script>
 
     
 </body>
